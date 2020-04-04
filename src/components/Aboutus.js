@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import photo1 from '../img/photo1.png';
 import photo2 from '../img/photo2.png';
 import photo3 from '../img/photo3.png';
+
 class Aboutus extends Component {
 
 render(){
