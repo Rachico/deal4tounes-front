@@ -2,6 +2,8 @@ import React , { Component } from 'react';
 import ActionList from './ActionList';
 import SearchBox from './SearchBox';
 
+import '../css/style.css' ;
+
 
 
 class ActionsContainer extends Component {

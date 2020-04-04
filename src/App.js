@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import Aboutus from './components/Aboutus';
+import ContactUs from './components/ContactUs';
 class App extends Component {
 
 
@@ -37,7 +38,7 @@ class App extends Component {
             <Link to="/actions">Login</Link>
           </div>
           <div className="col fl w-10 ph1">
-            <Link to="/actions">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </div>
        
         </div>
@@ -47,6 +48,7 @@ class App extends Component {
       <Route exact path="/" component={Home} />
       <Route path="/about" component={Aboutus} />
       <Route path="/actions" component={ActionsContainer} />
+      <Route path="/contact" component={ContactUs} />
 
     </div>
   </Router>
