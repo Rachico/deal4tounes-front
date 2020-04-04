@@ -8,6 +8,7 @@ import ActionsContainer from './components/ActionsContainer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import ThePageOfArticles from './Pages/ThePageOfArticles';
+import Aboutus from './components/Aboutus';
 class App extends Component {
 
 
@@ -19,23 +20,32 @@ class App extends Component {
 <Router>
                 
    <div className="App">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/actions">Actions</Link>
-        </li>
+      <div className="row mh7 bg-light-gray pa3 tc">
+      <div className="col fl w-10 hover-near-black ph1">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="col fl w-10 ph1">
+            <Link to="/about">About</Link>
+          </div>
+          <div className="col fl w-10 ph1">
+            <Link to="/actions">Actions</Link>
+          </div>
+          <div className="col fl w-10 ph1">
+            <Link to="/actions">Sign up</Link>
+          </div>
+          <div className="col fl w-10 ph1">
+            <Link to="/actions">Login</Link>
+          </div>
+          <div className="col fl w-10 ph1">
+            <Link to="/actions">Contact</Link>
+          </div>
        
-      </ul>
+        </div>
 
       <hr />
 
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={ThePageOfArticles} />
+      <Route path="/about" component={Aboutus} />
       <Route path="/actions" component={ActionsContainer} />
 
     </div>
