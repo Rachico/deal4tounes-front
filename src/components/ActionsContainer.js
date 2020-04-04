@@ -15,7 +15,7 @@ class ActionsContainer extends Component {
     }
 
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/posts?_start=1&_limit=10')
+        fetch('https://jsonplaceholder.typicode.com/posts')
             .then(response => response.json())
             .then(posts => this.setState({ actions: posts}))
         
