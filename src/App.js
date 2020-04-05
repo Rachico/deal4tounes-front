@@ -20,28 +20,39 @@ class App extends Component {
    
 <Router>
                 
-   <div className="App">
-      <div className="row mh7 bg-light-gray pa3 tc">
-      <div className="col fl w-10 hover-near-black ph1">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="col fl w-10 ph1">
-            <Link to="/about">About</Link>
-          </div>
-          <div className="col fl w-10 ph1">
-            <Link to="/actions">Actions</Link>
-          </div>
-          <div className="col fl w-10 ph1">
-            <Link to="/actions">Sign up</Link>
-          </div>
-          <div className="col fl w-10 ph1">
-            <Link to="/actions">Login</Link>
-          </div>
-          <div className="col fl w-10 ph1">
-            <Link to="/contact">Contact</Link>
-          </div>
-       
+<header id="header">
+      <div class="container-fluid" style={{fontFamily:"Open Sans"}}>
+
+        <div id="logo" class="pull-left">
+          <h1 style={{fontFamily:"Open Sans"}}><a href="/">Deal4tounes</a></h1>
         </div>
+
+        <nav id="nav-menu-container">
+            <div className="row menu-active" style={{fontFamily:"Open Sans"}}>
+              <div className="col">
+                <Link to="/"  className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>Home</Link>
+              </div>
+              <div className="col">
+                <Link to="/about" className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>About</Link>
+              </div>
+              <div className="col">
+                <Link to="/actions" className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>Actions</Link>
+              </div>
+              <div className="col">
+                <Link to="/actions" className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>Signup</Link>
+              </div>
+              <div className="col">
+                <Link to="/actions" className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>Login</Link>
+              </div>
+              <div className="col">
+                <Link to="/contact" className="font-weight-bold" style={{fontFamily:"Open Sans",color:"black"}}>Contact</Link>
+              </div>
+            </div>  
+        </nav>
+        
+     </div> 
+     
+</header>
 
       <hr />
 
@@ -50,7 +61,7 @@ class App extends Component {
       <Route path="/actions" component={ActionsContainer} />
       <Route path="/contact" component={ContactUs} />
 
-    </div>
+    
   </Router>
 );   
               

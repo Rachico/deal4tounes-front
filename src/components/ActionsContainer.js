@@ -1,6 +1,7 @@
 import React , { Component } from 'react';
 import ActionList from './ActionList';
 import SearchBox from './SearchBox';
+import '../css/style.css' ;
 
 import '../css/style.css' ;
 
@@ -36,11 +37,11 @@ class ActionsContainer extends Component {
         return !actions.length ?
         <h1>Chargement...</h1> :
             (
-                <div className='tc'>
-                    <h1 className='f1'>Liste des actions</h1>
-                    <SearchBox searchChange ={this.onSearchChange}/>
+                <div className='tc pv5' style={{fontFamily:"Open Sans",color:"black"}}>
+                    <h1 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Liste des actions</h1>
+                    <SearchBox searchChange ={this.onSearchChange} style={{fontFamily:"Open Sans",color:"black"}}/>
                     
-                    <ActionList actions={filteredActions}/>
+                    <ActionList actions={filteredActions} style={{fontFamily:"Open Sans",color:"black"}}/>
                     
                 </div>
             );
