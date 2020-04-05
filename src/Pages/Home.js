@@ -26,7 +26,7 @@ class App extends Component {
   <ol className="carousel-indicators"></ol>
         <div className="carousel-inner" role="listbox">
           <div className="carousel-item active">
-            <div className="carousel-background"><img src={require('../img/intro-carousel/crop.png')} alt=""/></div>
+            <div className="carousel-background"><img src={require('../img/clasped-hands-541849_1920.jpg')} alt=""/></div>
             <div className="carousel-container">
             <div className="carousel-content" style={{border: '1px',background:'#fff',opacity: '1',padding:'-30px',borderRadius:'5px', width:'500px', height:'350px' }} >
 

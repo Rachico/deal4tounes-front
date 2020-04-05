@@ -35,7 +35,7 @@ class ActionsContainer extends Component {
         })
 
         return !actions.length ?
-        <h1>Chargement...</h1> :
+        <h1 className='tc pv5'>Chargement...</h1> :
             (
                 <div className='tc pv5' style={{fontFamily:"Open Sans",color:"black"}}>
                     <h1 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Liste des actions</h1>
