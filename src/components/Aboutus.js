@@ -2,16 +2,17 @@ import React,{ Component } from 'react';
 import photo1 from '../img/photo1.png';
 import photo2 from '../img/photo2.png';
 import photo3 from '../img/photo3.png';
+
 class Aboutus extends Component {
 
 render(){
     return (
         
   <section id="aboutus" class="section-bg wow fadeInUp">
-  <div class="container">
+  <div class="container"  style={{fontFamily:"Open Sans"}}>
 
     <div class="section-header">
-      <h3>Qui sommes-nous</h3>
+      <h3  style={{fontFamily:"Open Sans"}}>Qui sommes-nous</h3>
       <p>il a toujours été important pour nous de mieux comprendre notre empreinte écologique et sociale afin de réduire et de compenser notre impact.</p>
       <p>Nous nous sommes donc réunis, 4 élèves ingénieurs en informatique, afin d'oeuvrer pour une bonne cause et vous inciter à nous rejoindre.</p>
       <p>Notre responsabilité se traduit par 3 engagements principaux:</p>
