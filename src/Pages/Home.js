@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Aboutus from '../components/Aboutus';
 import ContactUs from '../components/ContactUs';
 import HeaderConnect from '../headers/HeaderConnect';
-import { Button } from 'react-bootstrap';
+
 
 class App extends Component {
 
@@ -20,7 +20,7 @@ class App extends Component {
               
   
   <section id="intro">
-  [{ /*<HeaderConnect/>*/ }
+  <HeaderConnect/>
   <div className="intro-container">
   <div id="introCarousel" className="carousel  slide carousel-fade" data-ride="carousel">
   <ol className="carousel-indicators"></ol>

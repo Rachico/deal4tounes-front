@@ -1,12 +1,77 @@
 import React,{ Component } from 'react';
-
+import axios from 'axios';
 import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
 
 class AddModel extends Component{
   constructor(props){
       super(props);  
     }
+    state={
+      name:'',
+      email:'',
+      password:'',
+      password_confirmation:'',
+      errorMessageemail: '',
+      
+    }
 
+   
+    firsthandler = (event) => {
+      this.setState({
+          name: event.target.value
+      })
+  }
+  emailhandler = (event) => {
+      this.setState({
+          email: event.target.value
+      })
+  }
+  passwordhandler = (event) => {
+      this.setState({
+          password: event.target.value
+      })
+  }
+
+  passwordconfirmhandler = (event) => {
+      this.setState({
+        password_confirmation: event.target.value
+      })
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+
+    axios.post(`http://127.0.0.1:8000/api/register`, {   
+      name: this.state.name,
+    email: this.state.email,
+    password : this.state.password,
+    password_confirmation: this.state.password_confirmation})
+    .then(response => { 
+      console.log(response)
+    })
+    .catch(error => {
+      if ( error.response.data.errors.hasOwnProperty("email") ) 
+     { this.setState({errorMessageemail:error.response.data.errors.email[0]});
+    console.log(error.response.data.errors.email[0])
+      }  if ( error.response.data.errors.hasOwnProperty("password") ) 
+       {this.setState({errorMessagepassword:error.response.data.errors.password[0]});
+       console.log(error.response.data.errors.password[0])
+      }
+      this.setState({name:""})
+      this.setState({email:""})
+      this.setState({password:""})
+   this.setState({password_confirmation:""})
+  
+   setTimeout(function() { //Start the timer
+    this.setState({errorMessagepassword:""})
+    this.setState({errorMessageemail:""})  //After 1 second, set render to true
+}.bind(this), 3000) 
+
+
+  });
+  }
+  
     render(){
       return(
         <div className="container" >
@@ -24,10 +89,11 @@ class AddModel extends Component{
               <Col sm={6}>
               <Form onSubmit={this.handleSubmit}>
                 <Form.Group controlId="Name">
-              <Form.Label> Nom</Form.Label>
+              <Form.Label> Nom d'utilisateur</Form.Label>
               <Form.Control
                 type="text"
-                name="Name"
+                name="name"
+                value={this.state.name} onChange={this.firsthandler}
                 required
                 placeholder="Nom d'utilisateur"
                />
@@ -35,13 +101,17 @@ class AddModel extends Component{
               <Form.Control
                 type="email"
                 name="email"
+                value={this.state.email} onChange={this.emailhandler}
                 required
                 placeholder="Adresse E-mail"
                />
+               { this.state.errorMessageemail &&
+  <h12 style={{color:"red"}} > { this.state.errorMessageemail } <br></br> </h12> }
                <Form.Label> Mot de passe</Form.Label>
               <Form.Control
                 type="password"
                 name="password"
+                value={this.state.password} onChange={this.passwordhandler}
                 required
                 placeholder="Mot de passe"
                />
@@ -49,13 +119,16 @@ class AddModel extends Component{
               <Form.Control
                 type="password"
                 name="password"
+                value={this.state.password_confirmation} onChange={this.passwordconfirmhandler}
                 required
                 placeholder="Mot de passe"
                />
+               { this.state.errorMessagepassword &&
+  <div style={{ frontSize:2, color:"red"}}> { this.state.errorMessagepassword} </div> }
               </Form.Group>
 
               <Form.Group>
-                  <Button type="submit" class="btn btn-outline-dark" style={{backgroundColor:"#18d26e"}}>
+                  <Button type="submit" className="btn btn-outline-dark"  style={{backgroundColor:"#18d26e"}}>
                   Confirmer
                   </Button>
               </Form.Group>
@@ -64,8 +137,9 @@ class AddModel extends Component{
           </Row>
         </Modal.Body>
         <Modal.Footer>
-        <button type="button" class="btn btn-outline-dark" onClick={this.props.onHide}>Fermer</button>
+        <button type="button" className="btn btn-outline-dark" onClick={this.props.onHide}>Fermer</button>
         </Modal.Footer>
+      
       </Modal>
 
           </div>
