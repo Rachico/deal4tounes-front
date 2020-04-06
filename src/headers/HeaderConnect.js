@@ -13,6 +13,9 @@ class HeaderConnect extends Component{
     this.state ={deps:[], addModalShow : false, editModalShow : false}
 }
 
+
+
+
     render(){
         let addModalClose =() => this.setState({addModalShow:false});
         return(
@@ -40,11 +43,11 @@ class HeaderConnect extends Component{
                       <div id="popover-content" className="hide" style={{width :'200px'}}>
                    <form style={{flexDirection: "column"}}>
                    <div className="form-group">
-                   <label Htmlfor="exampleInputEmail1">Addresse éléctronique</label>
+                   <label for="exampleInputEmail1">Addresse éléctronique</label>
                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                    </div>
                    <div className="form-group">
-                   <label style={{fontFamily:'arial', fontSize:'10px'}}>Mot de passe</label>
+                   <label for="exampleInputPassword1">Mot de passe</label>
                     <input type="password" className="form-control" id="exampleInputPassword1"/>
                     <a href="" style={{fontFamily:'arial', fontSize:'10px'}}>Mot de passe oublié ?</a>
                     </div>
