@@ -6,10 +6,10 @@ render(){
     return (
         
   <section id="contact" class="section-bg wow fadeInUp">
-  <div class="container">
+  <div class="container"  style={{fontFamily:"Open Sans"}}>
 
     <div class="section-header">
-      <h3>Contactez nous</h3>
+      <h3  style={{fontFamily:"Open Sans"}}>Contactez nous</h3>
       <form action="" method="post" role="form" class="contactForm">
         <div class="form-row">
           <div class="form-group col-md-6">
