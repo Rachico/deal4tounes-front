@@ -9,7 +9,7 @@ function Action({title, body, id}) {
             <div class='row'>
             <div class='col-4 img-responsive'>
                 
-                <img alt ='action_image' src={`https://flathash.com/${id}`}/>
+                <img alt ='action_image' style={{height:"200px",width:"200px"}}src={`https://flathash.com/${id}`}/>
             </div>
             <div class='col-8'>
                 <h1>{title}</h1>
