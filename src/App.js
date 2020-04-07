@@ -3,10 +3,10 @@ import './App.css';
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/ContactUs' ;
-import Home from './components/Home' ; 
+import Home2 from './components/Home2' ; 
 import ActionsContainer from './components/ActionsContainer'; 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
@@ -20,7 +20,8 @@ class App extends Component {
     
   return(
     <div>
-      <Header />
+      <HeaderConnect/>
+      <Home2 />
       <Aboutus />
       <ContactUs />
     </div>

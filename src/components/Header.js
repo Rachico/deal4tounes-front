@@ -3,7 +3,7 @@ import '../App.css';
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home from './Home' ; 
+import Home from './Home2' ; 
 import ActionsContainer from '../components/ActionsContainer'; 
 import Aboutus from '../components/Aboutus';
 import ContactUs from '../components/ContactUs';

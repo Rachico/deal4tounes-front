@@ -7,7 +7,7 @@ import ContactUs from '../components/ContactUs';
 import HeaderConnect from '../headers/HeaderConnect';
 
 
-class App extends Component {
+class Home extends Component {
 
  
   render(){
@@ -22,17 +22,16 @@ class App extends Component {
   <section id="intro">
   <HeaderConnect/>
   <div className="intro-container">
-  <div id="introCarousel" className="carousel  slide carousel-fade" data-ride="carousel">
+  <div id="introCarousel" className="carousel  slide carousel-fade tc" data-ride="carousel">
   <ol className="carousel-indicators"></ol>
         <div className="carousel-inner" role="listbox">
           <div className="carousel-item active">
-            <div className="carousel-background"><img src={require('../img/intro-carousel/crop.png')} alt=""/></div>
+          <div className="carousel-background"><img src={require('../img/clasped-hands-541849_1920.jpg')} alt=""/></div>
             <div className="carousel-container">
-            <div className="carousel-content" style={{border: '2px solid',background:'#fff',opacity: '0.45',padding:'-30px',borderRadius:'5px', width:'500px', height:'300px' }} >
+            <div className="carousel-content" style={{border: '1px',background:'#fff',opacity: '1',padding:'-30px',borderRadius:'5px', width:'500px', height:'350px' }} >
+            <h2 style={{fontSize:"40px", fontFamily:"Open Sans", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
 
-<h2 style={{fontSize:"30px", fontFamily:"arial", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
-
-<a href="#featured-services" className="btn-get-started scrollto">Commencez Maintenant</a>
+            <a href="#featured-services" className="btn btn-success grow" style={{fontFamily:"Open Sans"}}>Commencez Maintenant</a>
               
               </div>
             </div>
@@ -53,4 +52,4 @@ class App extends Component {
       );
 }
 }
-export default App;
+export default Home;
