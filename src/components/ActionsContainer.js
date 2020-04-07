@@ -18,7 +18,7 @@ class ActionsContainer extends Component {
     }
 
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
             .then(response => response.json())
             .then(posts => this.setState({ actions: posts}))
         
@@ -37,13 +37,15 @@ class ActionsContainer extends Component {
         return !actions.length ?
         <h1 className='tc pv5'>Chargement...</h1> :
             (
+                <div id="actions">
                 
-                <div className='tc pv5' style={{fontFamily:"Open Sans",color:"black"}}>
-                    <h1 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Liste des actions</h1>
-                    <SearchBox searchChange ={this.onSearchChange} style={{fontFamily:"Open Sans",color:"black"}}/>
-                    
-                    <ActionList actions={filteredActions} style={{fontFamily:"Open Sans",color:"black"}}/>
-                    
+                    <div className='tc pv5' style={{fontFamily:"Open Sans",color:"black"}}>
+                        <h1 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Liste des actions</h1>
+                        <SearchBox searchChange ={this.onSearchChange} style={{fontFamily:"Open Sans",color:"black"}}/>
+                        
+                        <ActionList actions={filteredActions} style={{fontFamily:"Open Sans",color:"black"}}/>
+                        
+                    </div>
                 </div>
             );
 

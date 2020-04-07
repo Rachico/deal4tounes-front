@@ -23,6 +23,7 @@ class App extends Component {
       <HeaderConnect/>
       <Home2 />
       <Aboutus />
+      <ActionsContainer />
       <ContactUs />
     </div>
   );
