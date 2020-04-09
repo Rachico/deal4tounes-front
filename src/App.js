@@ -20,11 +20,13 @@ class App extends Component {
     
   return(
     <div>
-      <HeaderConnect/>
+      
+    <HeaderConnect/>
       <Home2 />
       <Aboutus />
-      <ActionsContainer />
-      <ContactUs />
+      
+     <ContactUs />
+     <ThePageOfArticles/>
     </div>
   );
 }

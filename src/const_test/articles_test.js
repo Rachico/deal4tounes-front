@@ -2,59 +2,68 @@ export const articles=[
 
 { 
     id:"E",
-    title:'Jeune Afrique',
-    Avatar:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jeuneafrique.com%2Fcategorie-produit%2Funcategorized%2F&psig=AOvVaw2QbFS-cqKko-JlmHOyNxYa&ust=1584717985336000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDu9anfpugCFQAAAAAdAAAAABAD",
+    title:'Baya',
+    AvatarImage: require("../img/PageOfArticles/baya.png"),
     subheader:"September 15, 2017",
-    image : require("../img/intro-carousel/4.jpg"),
-    Typography: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."   
-    
+    image : require("../img/PageOfArticles/femmes.png"),
+    Typography: "Asma Shiri :Les problèmes liés au transport des femmes opérant dans le secteur agricole est une question structurelle ."   ,
+    TypographyParagraph:"Répondant à une question de TAP, dans le cadre de la visite effectuée, dimanche, par le chef du gouvernement Ilyes Fakhfakh à la région de Borj Essouk (Khélidia), la ministre a expliqué que cette question doit être posée dans le cadre d’un système complémentaire qui prend en considération les efforts déployés par tous les intervenants (autorités locales, régionales et ministères), en plus des femmes concernées. Elle a, également, appelé les femmes travaillant dans le secteur agricole à prendre conscience des dangers qui les menacent, et d’accepter les solutions juridiques et réglementaires prises dans ce cadre. La ministre a, dans le même cadre, réitéré la volonté de régler ce dossier. Pour sa part, le ministre de l’agriculture a mis l’accent sur l’importance des mesures prises en faveur de la femme travaillant dans le secteur agricole dans les régions de l’intérieur.",
+    moreIcon:"https://www.baya.tn/rubriques/society/societe/asma-shiri-les-problemes-lies-au-transport-des-femmes-operant-dans-le-secteur-agricole-est-une-question-structurelle/"
 },
 { 
     id:"L",
-     Avatar :"data:image/jpeg;base64,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",
-    title:'Insat Press',
+     AvatarImage :require("../img/PageOfArticles/slate.png"),
+    title:'slate.fr',
     subheader:"September 13, 2017",
-    image : require("../img/intro-carousel/1.jpg"),
-    Typography: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."   
-
+    image : require("../img/PageOfArticles/agri.png"),
+    Typography: "L'agriculture et la Covid-19 aujourd'hui: «Le confinement va clairement nous tuer, nous, petits paysans»                                "  , 
+    TypographyParagraph:"«Nous sommes en guerre», c'est le message inlassablement répété par Emmanuel Macron depuis le début de la crise du coronavirus. Dans cette guerre, les infirmières sont au front et prennent, pour l'ensemble de la population, des risques considérables. En seconde ligne, les agriculteurs sont également mis à contribution. À la vitesse à laquelle les supermarchés sont dévalisés, difficile d'imaginer un confinement sans leur travail.La FNSEA n'a pas manqué de communiquer sur la base de cet argumentaire. Le premier syndicat agricole profite de cette crise pour rappeler sur les réseaux sociaux l'importance du secteur primaire à grands coups de hashtags #OnVousNourrit et de portraits accompagnés du slogan «vous pourrez toujours compter sur nous pour vous nourrir».",
+    moreIcon:"http://www.slate.fr/story/189372/coronavirus-epidemie-confinement-agriculture-petits-paysans-abandon-etat-endettement"
 },
-{ 
-    id:"M",
-    title:'Tunivisions',
-    Avatar :"https://pbs.twimg.com/profile_images/552286390088511488/whj4i9BY.jpeg",
-    subheader:"September 13, 2019",
-    image : require("../img/intro-carousel/2.jpg"),
-    Typography: "party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like."   
+{
+    id:"G",
+    title:"Tunivisions ",
+    AvatarImage :require("../img/PageOfArticles/tuni.png"),
+    subheader:"janvier 31, 2020",
+    image : require("../img/PageOfArticles/arbre.png"),
+    Typography: "Planter des Arbres pour compenser son empreinte carbone, une prise de conscience des jeunes Tunisiens." ,
+    TypographyParagraph :"Tunisian Campers, SAMAKA, Farm Trust et Rotary Club La Marsa Impact organisent les 1er et 2 février prochains, une action de plantation de 4 mille arbres forestiers à Dar Chichou, dans la délégation d’El Haouaria relevant du gouvernorat de Nabeul. Cette opération appelle la société civile à se mobiliser pour cette belle initiative écologique. Les organisateurs de cette action confirment qu’il y a une véritable prise de conscience collective récente pour être en faveur de l’écologie, la biodiversité et contre les dérèglements climatiques. Cette sensibilité à l’écologie s’est éveillée auprès des jeunes afin de protéger notre environnement. Les organisateurs lancent un appel à tous les citoyens du village pour compenser leurs empreintes carbones par un simple geste de plantation des arbres. « Le reboisement est notre responsabilité pour sauvegarder nos forêts. On n’a pas le même pouvoir que le gouvernement, mais on peut tous participer à notre échelle » affirme Madame Islem Lahami responsable image publique du Rotary la Marsa Impact.",
+    moreIcon:"https://tunivisions.net/36165/planter-des-arbres-pour-compenser-son-empreinte-carbone-une-prise-de-conscience-des-jeunes-tunisiens/"
+
 
 },
 {
     id:"Y",
     title:"L'instant M",
-    Avatar :"https://lh3.googleusercontent.com/proxy/-Q14goDT8kgWr0AvxcNyC32YfZQzroVSiC8zX_VURTprJ5YYpSnCCjVfKKe8bPq0gdkC5uqnn0nCYmDGRA",
-    subheader:"September 13, 2020",
-    image : require("../img/intro-carousel/3.jpg"),
-    Typography: "party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like." 
-
+    AvatarImage :require("../img/PageOfArticles/M.png"),
+    subheader:"Mars 30, 2020",
+    image : require("../img/PageOfArticles/n.png"),
+    Typography: "En pleine crise sanitaire, de nombreuses entreprises et citoyens proposent leur aide aux établissements de santé. Compétence, service ou matériel, les besoins sont nombreux et il n'est pas toujours facile de s'y retrouver." ,
+    TypographyParagraph :"Pourquoi N3awen.com? Le lancement de N3awen.com est venu d’un constat effectué après plusieurs semaines de confinement: Peu d'institutions étatiques prennent le lead et malheureusement, lorsqu’elles le font, elles sont trop bureaucratiques et la mise en oeuvre du projet prend trop de temps.Soucieuse que l'Etat est débordé, GoMyCode a cependant observé beaucoup de bonne volonté de la part de citoyens et d’entreprises à travers les réseaux sociaux. Cependant, ces louables initiatives sont souvent éparpillées ou dans des groupes privées, ne parvenant pas à tout le monde ou se perdant dans le flux d’informations. C’est pour répondre à ce besoin de centraliser ces initiatives et de permettre une plus grande célérité des actions, que la plateforme n3awen.com a vu le jour. Cette initiative lancée par GoMyCode en partenariat avec Shems Fm ne saurait réussir sans votre soutien et sans une forte mobilisation et collaboration citoyenne. Pour ce faire, merci de partager massivement notre site auprès de vos amis, familles, communautés afin que tous ensemble réussissions à montrer comment, solidairement, nous pouvons relever le défi face à cette épidémie.Comment utiliser n3awen.com? Pour ce faire, rien de plus simple, rendez-vous sur www.n3awen.com. La plateforme est facile d’utilisation.",
+    moreIcon:"http://www.linstant-m.tn/article_6101_n3awen.com--une-plateforme-pour-centraliser-les-aides-destinees-aux-etablissements-publics-de-sante.html"
 
 }
 ,
-{
-    id:"G",
-    title:"Géo Magazine ",
-    Avatar :"https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.lepassage-editions.fr%2F2019%2F08%2F16%2Fpresse-matador-yankee-geo%2F&psig=AOvVaw1Et82TJR1ZUNi9S3YxBEC5&ust=1584718285357000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiE_7jgpugCFQAAAAAdAAAAABAO",
-    subheader:"September 13, 2020",
-    image : require("../img/intro-carousel/3.jpg"),
-    Typography: "party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like." 
-
-
+{ 
+    id:"M",
+    title:'Jeune afrique',
+    AvatarImage :require('../img/PageOfArticles/jeune.png'),
+    subheader:"September 13, 2019",
+    image : require("../img/PageOfArticles/rea.png"),
+    Typography: "Nécessaires pour traiter les patients les plus sévèrement atteints par le Covid-19,les lits de réanimation et les respirateurs manquent en Afrique. Le point sur le matériel disponible et sur la réalité des besoins. "   ,
+    TypographyParagraph :" C’est la grande question que se posent tous les spécialistes de la pandémie de coronavirus, et elle est particulièrement d’actualité en Afrique où le nombre de malades est encore limité, mais où les systèmes de santé comptent parmi les plus fragiles. Combien chaque pays possède-t-il de lits de réanimation, combien de respirateurs ?Les lits de réanimation, explique le Dr Moumouni Kinda, directeur des opérations de l’organisation non gouvernementale ALIMA, qui est notamment intervenue pour soigner des malades atteints de la fièvre Ebola, sont des unités « de soins spécialisés qui ont pour but de suppléer à une défaillance vitale d’un ou de plusieurs organes de l’organisme ».Quant aux respirateurs, ils sont utilisés lorsque la défaillance évoquée est d’ordre respiratoire, « ce qui est en général le cas avec le Covid-19 », poursuit le médecin.",
+    moreIcon:"https://www.jeuneafrique.com/924087/societe/nombre-de-lits-de-reanimation-et-de-respirateurs-ou-en-est-lafrique/"
 },
+
 {
     id:"A",
-    title:"Al Chourouk",
-    Avatar :"https://tunisia.mom-rsf.org/uploads/tx_lfrogmom/media/149_import.jpg",
-    subheader:"September 13, 2020",
-    image : require("../img/intro-carousel/3.jpg"),
-    Typography: "party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like." 
+    title:"Tunis Webdo",
+    AvatarImage :require('../img/PageOfArticles/tuniswebdo.png'),
+    subheader:"janvier 2, 2015",
+    image : require("../img/PageOfArticles/vet.png"),
+    Typography: "L’Union des Associations Humanitaires Tunisiennes organise une collecte de vêtements pour les habitants des zones sinistrées par la neige dans les régions de Kasserine, Béja et Siliana..",
+    TypographyParagraph :"L’Union des Associations Humanitaires Tunisiennes (UAHT) organise une collecte de vêtements pour les habitants des zones sinistrées par la neige dans les régions de Kasserine, Béja et Siliana. Cette collecte qui vient suite à la vague de froid qui s’est abattue en Tunisie, a débuté ce jeudi 1er janvier et se poursuivra jusqu’au vendredi 9 janvier, date du tri final des vêtements et des aides. Habib Trabelsi, membre de l’association a déclaré que toute personne désirant aider peut contacter l’UAHT :« Les numéros de téléphone sont destinés aux gens qui veulent aider en donnant des vêtements. Nous nous déplaçons pour la collecte. Et, on commencera le tri le vendredi 9 janvier. Nous trions les vêtements par paquets, avec la taille et le nom de la personne qui le recevra car nous effectuons au préalable une coordination dans la région concernée pour connaître les demandes. »  ",
+    moreIcon:"http://www.webdo.tn/2015/01/02/tunisie-lunion-des-associations-humanitaires-tunisiennes-organise-une-collecte-de-vetements/"
 
 
 }
