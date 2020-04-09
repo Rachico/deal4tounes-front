@@ -8,9 +8,7 @@ import HeaderConnect from './Header';
 import { Button } from 'react-bootstrap';
 import $ from 'jquery';
 
-
-class Home2  extends Component {
-
+class App extends Component {
   componentDidMount(){
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
@@ -41,13 +39,13 @@ class Home2  extends Component {
         <ol className="carousel-indicators"></ol>
               <div className="carousel-inner" role="listbox">
                 <div className="carousel-item active">
-                  <div className="carousel-background"><img src={require('../img/hands-4906663_1920.jpg')} alt=""/></div>
+                  <div className="carousel-background"><img src={require('../img/clasped-hands-541849_1920.jpg')} alt=""/></div>
                   <div className="carousel-container">
                   <div className="carousel-content" style={{border: '1px',background:'#fff',opacity: '1',padding:'-30px',borderRadius:'5px', width:'500px', height:'350px' }} >
 
       <h2 style={{fontSize:"40px", fontFamily:"Open Sans", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
 
-      <a href="#featured-services" className="btn btn-success grow" style={{fontFamily:"Open Sans",fontSize:"20px"}}>Commencer maintenant</a>
+      <a href="#featured-services" className="btn btn-success grow" style={{fontFamily:"Open Sans"}}>Commencez Maintenant</a>
                     
                     </div>
                   </div>
@@ -67,4 +65,4 @@ class Home2  extends Component {
       );
 }
 }
-export default Home2;
+export default App;
