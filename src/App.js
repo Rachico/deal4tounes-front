@@ -12,23 +12,25 @@ import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
 import Header from './components/Header';
 import $ from 'jquery';
+import CommentExample from './components/Comments/CommentExample';
 
 class App extends Component {
 
+ 
 
-  render(){
-    
-  return(
+  render() {
+   
+    return (
     <div>
-      
     <HeaderConnect/>
-      <Home2 />
-      <Aboutus />
-      <ActionsContainer />
-     <ContactUs />
-    {/* <ThePageOfArticles/>*/}
+     <Home2/>
+<Aboutus/>
+<ContactUs/>             
+
     </div>
-  );
+    
+      );
+  }
 }
-}
+
 export default App;
