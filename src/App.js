@@ -12,7 +12,7 @@ import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
 import Header from './components/Header';
 import $ from 'jquery';
-import CommentExample from './components/Comments/CommentExample';
+import CommentGroup from './components/Comments/CommentGroup'
 
 class App extends Component {
 
@@ -26,7 +26,7 @@ class App extends Component {
      <Home2/>
 <Aboutus/>
 <ContactUs/>             
-
+<CommentGroup/>
     </div>
     
       );
