@@ -5,6 +5,23 @@ body {
   color: black;
   font-family: "Open Sans", sans-serif;
 }
+.dot {
+  height: 15px;
+  width: 15px;
+  margin:10px;
+  background-color:none;
+  border-radius: 50%;
+  border:1px solid #18d26e;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.dot-container{
+  margin-left: 150px;
+  width: 200px;
+  
+}
 
 
 

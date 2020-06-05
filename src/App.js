@@ -10,6 +10,7 @@ import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
+import AddModel from './components/AddModel';
 import Header from './components/Header';
 import $ from 'jquery';
 
@@ -21,11 +22,11 @@ class App extends Component {
   return(
     <div>
       
-    <HeaderConnect/>
+      <HeaderConnect/>
       <Home2 />
       <Aboutus />
       <ActionsContainer />
-     <ContactUs />
+      <ContactUs />
     {/* <ThePageOfArticles/>*/}
     </div>
   );
