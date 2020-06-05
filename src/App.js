@@ -10,26 +10,28 @@ import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
-import AddModel from './components/AddModel';
 import Header from './components/Header';
 import $ from 'jquery';
+import CommentGroup from './components/Comments/CommentGroup'
 
 class App extends Component {
 
+ 
 
-  render(){
-    
-  return(
+  render() {
+   
+    return (
     <div>
-      
-      <HeaderConnect/>
-      <Home2 />
-      <Aboutus />
-      <ActionsContainer />
-      <ContactUs />
-    {/* <ThePageOfArticles/>*/}
+    <HeaderConnect/>
+     <Home2/>
+<Aboutus/>
+<ContactUs/>             
+<CommentGroup/>
     </div>
-  );
+    
+      );
+  }
 }
-}
+
 export default App;
+
