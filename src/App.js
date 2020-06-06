@@ -26,7 +26,7 @@ class App extends Component {
      <Home2/>
 <Aboutus/>
 <ContactUs/>             
-<CommentGroup/>
+<ThePageOfArticles/>
     </div>
     
       );

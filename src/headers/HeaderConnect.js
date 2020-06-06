@@ -46,7 +46,7 @@ class HeaderConnect extends Component{
                       <div id="popover-content" className="hide" style={{width :'200px'}}>
                    <form style={{flexDirection: "column"}}>
                    <div className="form-group">
-                   <label Htmlfor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
+                   <label htmlFor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                    </div>
                    <div className="form-group">

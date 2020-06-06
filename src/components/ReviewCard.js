@@ -53,7 +53,7 @@ export default function ReviewCard(props) {
     <Card className={classes.root}>
       <CardHeader
         avatar={
-          <Avatar alt={props.title} src={props.AvatarImage} />
+          <Avatar alt={props.title} src={props.avatar} />
         }
         action={
           <IconButton aria-label="settings" href={props.moreIcon}>
@@ -65,7 +65,7 @@ export default function ReviewCard(props) {
       />
       <CardMedia
         className={classes.media}
-        image ={props.image}
+        image ={props.content_image}
         title="Paella dish"
       />
       <CardContent>

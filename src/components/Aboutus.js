@@ -9,9 +9,9 @@ render(){
     return (
         
   <section id="aboutus" class="section-bg wow fadeInUp">
-  <div class="container"  style={{fontFamily:"Open Sans"}}>
+  <div className="container"  style={{fontFamily:"Open Sans"}}>
 
-    <div class="section-header">
+    <div className="section-header">
       <h3  style={{fontFamily:"Open Sans"}}>Qui sommes-nous</h3>
       <p>il a toujours été important pour nous de mieux comprendre notre empreinte écologique et sociale afin de réduire et de compenser notre impact.</p>
       <p>Nous nous sommes donc réunis, 4 élèves ingénieurs en informatique, afin d'oeuvrer pour une bonne cause et vous inciter à nous rejoindre.</p>
