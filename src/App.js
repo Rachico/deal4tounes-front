@@ -26,7 +26,7 @@ class App extends Component {
      <Home2/>
 <Aboutus/>
 <ContactUs/>             
-<ThePageOfArticles/>
+
     </div>
     
       );
@@ -35,3 +35,4 @@ class App extends Component {
 
 export default App;
 
+//<ThePageOfArticles/>

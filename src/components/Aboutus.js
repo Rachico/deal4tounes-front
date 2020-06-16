@@ -8,7 +8,7 @@ class Aboutus extends Component {
 render(){
     return (
         
-  <section id="aboutus" class="section-bg wow fadeInUp">
+  <section id="aboutus" className="section-bg wow fadeInUp">
   <div className="container"  style={{fontFamily:"Open Sans"}}>
 
     <div className="section-header">

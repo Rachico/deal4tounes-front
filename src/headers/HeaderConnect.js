@@ -80,7 +80,7 @@ handleSubmit = event => {
                             role="form"
                             >
                             <div className="form-group">
-                            <label Htmlfor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
+                            <label htmlFor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
                             <input 
                             type="email" 
                             className="form-control" 
