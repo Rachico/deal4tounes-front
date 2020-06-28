@@ -25,7 +25,11 @@ class App extends Component {
     return (
     
     <div>
-    <EspacePerso />
+    <HeaderConnect />
+    <Home2 />
+    <Aboutus />
+    <ContactUs />
+    <ThePageOfArticles />
     
     
     </div>
