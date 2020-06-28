@@ -119,6 +119,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 
+
 #header {
   padding: 30px 0;
   height: 92px;
@@ -1181,3 +1182,158 @@ h1::after {
 
 }
 }
+
+/*--------------------------------------------------------------
+# Espace Perso
+--------------------------------------------------------------*/
+#espace {
+  background-image: url(../img/espaceperso.jpg);
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+  
+
+}
+#espace::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+  opacity: 0.2;
+}
+
+#espace .container {
+  position: relative;
+  z-index: 10;
+}
+ 
+
+#espace .container .nav-menu{
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+
+#espace .container .nav-menu .aa {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color:white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+#espace .container .nav-menu li:hover > .aa,
+#espace .container .nav-menu > .menu-active > .aa {
+  color: #18d26e;
+  }
+  @media (max-width: 500px) {
+    #espace .nav-menu li{
+      display: inline-block;
+    }
+    }
+
+/*--------------------------------------------------------------
+# Espace Perso home
+--------------------------------------------------------------*/
+#espaceperso_home{
+  padding: 60px 0 40px 0;
+}
+
+#espaceperso_home p{
+  text-align: center;
+}
+
+#espaceperso_home a:hover{
+text-decoration: underline;
+
+}
+
+.article{
+  display:inline-block; 
+  padding:0 20px 0 20px;
+}
+
+.article:hover{
+
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.dropdownbutton p{
+  color: #000;
+}
+.dropdownbutton p:hover{
+ color: #18d26e; 
+}
+
+.hello{
+  color:white;
+  font-size:30px;
+}
+
+#espaceperso_home .article_name{
+  font-family:Open Sans;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .article_space {
+    display:inline-block!important;
+  }
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#foooter{
+  background-color: #000;
+  background: #000;
+  padding: 30px;
+  color: #eee;
+  font-size: 14px;
+
+}
+
+#foooter #logo {
+  display: flex;
+  justify-content: center;
+}
+
+#foooter #logo h2 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#foooter #logo h2 a,
+#foooter #logo h1 a:hover {
+  color:white;
+  padding-left: 10px;
+  border-left: 4px solid #18d26e;
+}
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+

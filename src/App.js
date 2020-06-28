@@ -12,7 +12,9 @@ import Aboutus from './components/Aboutus';
 import ContactUs from './components/ContactUs';
 import Header from './components/Header';
 import $ from 'jquery';
-import CommentGroup from './components/Comments/CommentGroup'
+import CommentGroup from './components/Comments/CommentGroup';
+import EspacePerso from './components/EspacePerso';
+import EspacePersoHeader from './headers/EspacePersoHeader.js';
 
 class App extends Component {
 
@@ -21,14 +23,13 @@ class App extends Component {
   render() {
    
     return (
-    <div>
-    <HeaderConnect/>
-     <Home2/>
-<Aboutus/>
-<ContactUs/>             
-<CommentGroup/>
-    </div>
     
+    <div>
+    <EspacePerso />
+    
+    
+    </div>
+     
       );
   }
 }

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App';
 
 
+
 class HeaderConnect extends Component{
 
   constructor(props){
@@ -20,10 +21,7 @@ class HeaderConnect extends Component{
         let addModalClose =() => this.setState({addModalShow:false});
         return(
           
-          
-
-
-
+                         
             <header id="header">
              
             <div className="container-fluid">
@@ -36,9 +34,7 @@ class HeaderConnect extends Component{
                
                   <li className="menu-active"><a href="#intro" style={{ fontFamily:"Open Sans"}}>Accueil</a></li>
                   <li><a href="#aboutus" style={{ fontFamily:"Open Sans"}}>Qui sommes-nous</a></li>
-                 
-                  <li><a href="#actions" style={{ fontFamily:"Open Sans"}}>Actions</a></li>
-                
+                                                 
                   <li><a href="#contact" style={{ fontFamily:"Open Sans"}}>Contact</a></li>
                    <li className="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" style={{ fontFamily:"Open Sans"}}>Login</a>
                     <ul>
@@ -65,13 +61,20 @@ class HeaderConnect extends Component{
             show={this.state.addModalShow}
             onHide={addModalClose}
             />
+            
                
                 </ul>
               
               </nav>
             </div>
           </header>
+          
+          
 
+          
+          
+        
+         
 
 
 
