@@ -24,7 +24,7 @@ class FormUserDetails extends Component {
         
       
         <React.Fragment>
-        <div class="dot-container">
+        <div className="dot-container">
                 <span className="dot" style={{ backgroundColor: "#18d26e"}}></span>
                 <span className="dot"></span>
                 <span className="dot"></span>

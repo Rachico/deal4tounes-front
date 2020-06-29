@@ -66,6 +66,41 @@ export const articles=[
     moreIcon:"http://www.webdo.tn/2015/01/02/tunisie-lunion-des-associations-humanitaires-tunisiennes-organise-une-collecte-de-vetements/"
 
 
+},
+{
+    id:"K",
+    title:" Baya",
+    avatar :require("../img/PageOfArticles/baya.png"),
+    subheader:"janvier 31, 2020",
+    content_image : require("../img/PageOfArticles/girls.png"),
+    Typography: "Programme de l’entrepreneuriat féminin RAIDA : Création de plus de 4400 projets, destiné aux femmes qui désirent créer des petits ou moyens projets" ,
+    TypographyParagraph :"Depuis son lancement en octobre 2016, le Programme de promotion de l’entrepreneuriat féminin “RAIDA” a contribué à la création de plus de 4400 projets féminins dans différents secteurs d’activités moyennant un budget estimé à 37 millions de dinars, c’est ce qui ressort de la réunion de travail organisée jeudi entre la ministre de la femme, de la famille, de l’enfance et des séniors, Asma Sehiri Labidi et le directeur général de la banque tunisienne de solidarité (BTS), Mohamed Kaaniche. L’objectif étant de créer 8000 projets à la fin de 2020 et augmenter le taux de participation de la femme à la vie active et à la création de projets innovants à travers la promotion de l’initiative privée féminine et le renforcement des capacités des femmes. Destiné aux femmes qui désirent créer des petits ou moyens projets, le programme RAIDA est mis en œuvre en partenariat avec la BTS et ce, dans le cadre des efforts visant à réduire le taux de chômage chez les diplômés du supérieur. Les bénéficiaires du programme profitent de l’accompagnement, de la formation et de l’assistance à la création du projet outre le financement à travers des crédits simples et le suivi.",
+    moreIcon:"https://www.baya.tn/rubriques/society/societe/programme-de-lentrepreneuriat-feminin-raida-creation-de-plus-de-4400-projets/"
+
+
+},
+{
+    id:"X",
+    title:"L'instant M",
+    avatar :require("../img/PageOfArticles/M.png"),
+    subheader:"Mars 30, 2020",
+    image : require("../img/PageOfArticles/corona.png"),
+    Typography: "L'ENIT JUNIOR ENTREPRISE veillant toujours au meilleur développement de ses différents volets à savoir la communication, nous parle de l'impact du corona virus sur la planète." ,
+    TypographyParagraph :"Au cours de son histoire, l’être humain a appris à satisfaire ses besoins tout en profitant des ressources naturelles offertes par la nature. Et grâce à sa capacité cognitive unique, il a su garantir une vie paisible, en profitant toujours des êtres vivants qui l’entourent. Le virus covid-19 a submergé le monde entier: confinements, mesures strictes, absence d’activités économiques...toutes les conséquences de cette pandémie nous laissent un moment de réflexion quant à nos habitudes et notre hygiène de vie.Dernièrement, nous avons observé des faillites et des chutes de bourses : l’économie mondiale touche presque à ses limites Mais de l’autre côté de la rive, loin des dégâts actuels de la pandémie, nous observons également la planète Terre qui respire de nouveau!",
+    moreIcon:"http://www.linstant-m.tn/article_6127_covid-19-virus-menacant-l-humanite-mais-liberant-la-nature.-.html"
+
+},
+{
+    id:"R",
+    title:"INSAT PRESS",
+    avatar :require("../img/PageOfArticles/insat.png"),
+    subheader:"Mars 25, 2019",
+    content_image : require("../img/PageOfArticles/make.png"),
+    Typography: "“You are never too small to make a difference.” Said the Swedish 15-year-old environmental activist, Greta Thunberg in her speech at the COP24 in Katowice." ,
+    TypographyParagraph :"The Nobel peace prize winner Greta Thunberg addresses world’s leaders to raise consciousness about climate change. Earlier this year, the teenage girl raises a movement about climate justice by leading Swedish students in mass walkouts from school, and last month thousands of students in Australia, inspired by her, also left their classrooms.Her powerful speech quickly gained attention on social media, and video of her speech was shared by leading climate scientists and officials. Vermont Sen. Bernie Sanders tweeted  a part of her speech, saying she « called out world leaders for their global inaction on climate change. » By using such rhetoric, the little activist wanted to shake the publics’, and especially the world’s leaders’ negligence, by saying: “You are not mature enough to tell it like it is.”She also blamed them of speaking only about “green eternal economic growth” arguing that they are “too scared of being unpopular.”",
+    moreIcon:"https://insatpress.tn/2019/03/25/you-are-never-too-small-to-make-a-difference/"
+
 }
+
 
 ]

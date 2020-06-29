@@ -57,10 +57,12 @@ onSearchChange = (event) => {
 render(){  
     const { articles, searchfield } = this.state
 const filteredArticles = articles.filter(articles =>{
-    return articles.Typography.toLowerCase().includes(searchfield.toLowerCase());
+ return articles.Typography.toLowerCase().includes(searchfield.toLowerCase());
 
 })
   
+        
+   
     
     return(
         <div>
