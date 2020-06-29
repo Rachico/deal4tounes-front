@@ -24,7 +24,7 @@ const CarouselPage = () => {
           </MDBView>
           <MDBCarouselCaption>
         
-            <h2 className="h2-responsive"style={{fontFamily:"Open Sans",marginTop:"50px"}} >Vous avez un article enrechissant que vous voulez partager avec nous ?</h2>
+            <h2 className="h2-responsive"style={{fontFamily:"Open Sans",marginTop:"50px"}} >Vous avez un article enrichissant que vous voulez partager avec nous ?</h2>
           
           </MDBCarouselCaption>
         </MDBCarouselItem>
@@ -38,7 +38,7 @@ const CarouselPage = () => {
           <MDBMask overlay="green-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Alors contacter nous dans la zone de Contactez nous pour que vous vous bénifiez d'une visiblité et pour que vous partagez vos experiences avec nous !</h3>
+            <h3 className="h3-responsive">Alors contactez-nous dans la zone de contactez nous pour que vous vous bénéficiez d'une visibilité et pour que vous partagez vos expériences avec nous !</h3>
         
           </MDBCarouselCaption>
         </MDBCarouselItem>
