@@ -39,7 +39,11 @@ class Switcher extends Component {
               values = {this.props.values}
               showPassword = {this.props.showPassword}
               />
+             
             );
+            default :
+            return( console.log("default case"));
+            
           }
         
     }

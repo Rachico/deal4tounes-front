@@ -1,14 +1,13 @@
 import React , { Component } from 'react';
 import '../css/style.css' ;
-import { AppBar, MuiThemeProvider, TextField, RaisedButton } from '@material-ui/core';
-import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
+
+import {Button} from 'react-bootstrap';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
 import Input from '@material-ui/core/Input';
-import FilledInput from '@material-ui/core/FilledInput';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
+
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 
@@ -34,7 +33,7 @@ class FormUserPassword extends Component {
         const { values, handleChange, handleClickShowPassword, handleMouseDownPassword } = this.props;
      return (
         
-        <MuiThemeProvider >
+        
         <React.Fragment>
 
         <div class="dot-container">
@@ -113,7 +112,7 @@ class FormUserPassword extends Component {
             
           
         </React.Fragment>
-      </MuiThemeProvider>
+      
     
         
      )

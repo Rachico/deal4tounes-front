@@ -2,43 +2,57 @@ import React,{ Component } from 'react';
 import AddModel from '../components/AddModel';
 import '../css/style.css' ;
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
-
+import ThePageOfArticles from '../Pages/ThePageOfArticles';
+import Home2 from '../components/Home2' ; 
 import '../App';
+import axios from 'axios';
+import {Redirect,BrowserRouter} from 'react-router-dom';
 
 
 class HeaderConnect extends Component{
 
-  constructor(props){
-    super(props);
+  constructor(){
+    super();
     this.state ={
       deps:[], 
       addModalShow : false, 
       editModalShow : false,
       email:'',
-      password:''
+      password:'',
+      login:false ,
+      store :null,
+  
     }
+    
 }
 
 handleChange = input=> e => {
   this.setState({ 
     [input]: e.target.value 
   });
-}
+};
 
-handleSubmit = event => {
-    
+
+ handleSubmit = event => {
   console.log('done');
   event.preventDefault();
 
   axios.post(`http://127.0.0.1:8000/api/auth/login`, {   
       email: this.state.email,
-      password : this.state.password
-      
+      password : this.state.password,
+  
+      body: JSON.stringify(this.state),     
     
     }).then(response => { 
-        console.log(response)
-      }).catch(errors => {
+      console.log('done1');
+      console.log(response);
+    this.setState({
+      login:true})
+  
+      localStorage.setItem('login',true) ;
+       localStorage.setItem('store',response.data.access_token);
+
+          }).catch(errors => {
             console.log(errors)
       });
 }
@@ -47,17 +61,20 @@ handleSubmit = event => {
 
 
     render(){
-        let addModalClose =() => this.setState({addModalShow:false});
-        return(
-          
-        
+    let addModalClose =() => this.setState({addModalShow:false});
+   
 
-            <header id="header">
+
+
+
+    
+        return(
+                  <header id="header">
              
             <div className="container-fluid">
         
               <div id="logo" className="pull-left">
-              <h2><a href="#" className="scrollto" style={{ fontFamily:"Open Sans"}}>Deal4Tounes</a></h2>
+              <h2><a href="#aboutus" className="scrollto" style={{ fontFamily:"Open Sans"}}>Deal4Tounes</a></h2>
               </div>
               <nav id="nav-menu-container">
                 <ul className="nav-menu">
@@ -65,10 +82,10 @@ handleSubmit = event => {
                   <li className="menu-active"><a href="#intro" style={{ fontFamily:"Open Sans"}}>Accueil</a></li>
                   <li><a href="#aboutus" style={{ fontFamily:"Open Sans"}}>Qui sommes-nous</a></li>
                  
-                  <li><a href="#actions" style={{ fontFamily:"Open Sans"}}>Actions</a></li>
+                  
                 
                   <li><a href="#contact" style={{ fontFamily:"Open Sans"}}>Contact</a></li>
-                   <li className="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false"><a href="" style={{ fontFamily:"Open Sans"}}>Se connecter</a>
+                   <li className="dropdown-toggle" href="#contact" id="dropdownMenuLink" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false"><a href="" style={{ fontFamily:"Open Sans"}}>Se connecter</a>
                     <ul>
                     
                       <div id="popover-content" className="hide" style={{width :'200px',width:"265px"}}>
@@ -80,7 +97,7 @@ handleSubmit = event => {
                             role="form"
                             >
                             <div className="form-group">
-                            <label Htmlfor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
+                            <label htmlFor="exampleInputEmail1" style={{fontFamily:'Open Sans'}}><strong>email</strong></label>
                             <input 
                             type="email" 
                             className="form-control" 
@@ -120,7 +137,6 @@ handleSubmit = event => {
               </nav>
             </div>
           </header>
-
 
 
 

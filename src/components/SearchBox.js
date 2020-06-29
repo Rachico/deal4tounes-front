@@ -1,13 +1,15 @@
 import React from 'react';
-
+import 'tachyons' ;
 
 function SearchBox({searchfield, searchChange}) {
     return (
-        <div className='pa2'>
+      
+                <div className='pa4 '>
             <input 
-            className='pa3 ba b--black bg-white'
+            
+            className='pa3 ba b--green '
                 type='search' 
-                placeholder='rechercher une action'
+                placeholder='rechercher ici '
                 onChange ={searchChange}
             />
         </div>
