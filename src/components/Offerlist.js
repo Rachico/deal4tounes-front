@@ -1,6 +1,6 @@
 import React from 'react';
-import Offer from './Offer';
-import { Col } from 'react-bootstrap';
+import Offer from "./Offer";
+
 
 
 
@@ -43,6 +43,7 @@ function OfferList({ offers }) {
 }
   
   export default OfferList;
+
 
 
 

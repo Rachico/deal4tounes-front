@@ -1,11 +1,10 @@
 import React , { Component } from 'react';
-import OfferList from './OfferList';
-import faker from 'faker';
-import Offer from './Offer';
+import Offerlist from './Offerlist';
+import Offer from "./Offer";
 import { data } from 'jquery';
 import '../css/style.css' ;
 import '../css/style.css' ;
-import { Row, Col, Grid } from 'react-bootstrap';
+
 
 
 
@@ -44,7 +43,7 @@ class OffersContainer extends Component {
                     
                               
                                     
-                                        <OfferList offers={offers} /> 
+                                        <Offerlist offers={offers} /> 
                                     
                                
  
@@ -67,5 +66,3 @@ class OffersContainer extends Component {
 }
   
 export default OffersContainer;
-    
-   
