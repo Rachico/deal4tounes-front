@@ -35,7 +35,8 @@ class HeaderConnect extends Component{
                   <li><a href="#aboutus" style={{ fontFamily:"Open Sans"}}>Qui sommes-nous</a></li>
                  
                   <li><a href="#actions" style={{ fontFamily:"Open Sans"}}>Actions</a></li>
-                
+                  <li><a href="#offer" style={{ fontFamily:"Open Sans"}}>Offers</a></li>
+
                   <li><a href="#contact" style={{ fontFamily:"Open Sans"}}>Contact</a></li>
                    <li className="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="" style={{ fontFamily:"Open Sans"}}>Login</a>
                     <ul>

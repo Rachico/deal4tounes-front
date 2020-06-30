@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/ContactUs' ;
 import Home2 from './components/Home2' ; 
 import ActionsContainer from './components/ActionsContainer'; 
+import OfferContainer from './components/OffersContainer';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
@@ -24,7 +25,11 @@ class App extends Component {
       <Home2 />
       <Aboutus />
       <ActionsContainer />
+      <OfferContainer />
       <ContactUs />
+
+
+      
     </div>
   );
 }
