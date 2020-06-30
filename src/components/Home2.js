@@ -38,8 +38,9 @@ class Home2  extends Component {
  
   render(){
     
-   
-    if(localStorage.getItem('login')){
+    let   x=localStorage.getItem('login');
+    let  loginYes = (x === 'true')   
+    if(loginYes){
       
       return (
       <div className="app-routes">

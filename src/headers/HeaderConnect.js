@@ -7,8 +7,6 @@ import Home2 from '../components/Home2' ;
 import '../App';
 import axios from 'axios';
 import {Redirect,BrowserRouter} from 'react-router-dom';
-import store from 'store';
-import { createBrowserHistory  } from 'history'
 
 
 class HeaderConnect extends Component{
@@ -34,10 +32,6 @@ handleChange = input=> e => {
   });
 };
 
-refreshPage() {
-  window.location.reload(false);
-}
-
 
  handleSubmit = event => {
   console.log('done');
@@ -50,14 +44,13 @@ refreshPage() {
       body: JSON.stringify(this.state),     
     
     }).then(response => { 
-              
-        this.setState({
-          login:true
-        })
-        history.push('/about');
-        this.refreshPage();
-        store.set('login',true) ;
-        store.set('store',response.data.access_token);
+      console.log('done1');
+      console.log(response);
+    this.setState({
+      login:true})
+  
+      localStorage.setItem('login',true) ;
+       localStorage.setItem('store',response.data.access_token);
 
           }).catch(errors => {
             console.log(errors)
@@ -89,6 +82,9 @@ refreshPage() {
                   <li className="menu-active"><a href="#intro" style={{ fontFamily:"Open Sans"}}>Accueil</a></li>
                   <li><a href="#aboutus" style={{ fontFamily:"Open Sans"}}>Qui sommes-nous</a></li>
                  
+                  <li><a href="#actions" style={{ fontFamily:"Open Sans"}}>Actions</a></li>
+                  <li><a href="#offer" style={{ fontFamily:"Open Sans"}}>Offers</a></li>
+
                   
                 
                   <li><a href="#contact" style={{ fontFamily:"Open Sans"}}>Contact</a></li>
@@ -152,4 +148,3 @@ refreshPage() {
     
 }
 export default HeaderConnect ;
-export const history = createBrowserHistory();
