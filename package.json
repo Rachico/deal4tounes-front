@@ -25,6 +25,7 @@
     "react-slick": "^0.25.2",
     "semantic-ui-react": "^0.88.2",
     "slick-carousel": "^1.8.1",
+    "store": "^2.0.12",
     "tachyons": "^4.11.1"
   },
   "scripts": {

@@ -7,6 +7,8 @@ import Home2 from '../components/Home2' ;
 import '../App';
 import axios from 'axios';
 import {Redirect,BrowserRouter} from 'react-router-dom';
+import store from 'store';
+import { createBrowserHistory  } from 'history'
 
 
 class HeaderConnect extends Component{
@@ -32,6 +34,10 @@ handleChange = input=> e => {
   });
 };
 
+refreshPage() {
+  window.location.reload(false);
+}
+
 
  handleSubmit = event => {
   console.log('done');
@@ -44,13 +50,14 @@ handleChange = input=> e => {
       body: JSON.stringify(this.state),     
     
     }).then(response => { 
-      console.log('done1');
-      console.log(response);
-    this.setState({
-      login:true})
-  
-      localStorage.setItem('login',true) ;
-       localStorage.setItem('store',response.data.access_token);
+              
+        this.setState({
+          login:true
+        })
+        history.push('/about');
+        this.refreshPage();
+        store.set('login',true) ;
+        store.set('store',response.data.access_token);
 
           }).catch(errors => {
             console.log(errors)
@@ -145,3 +152,4 @@ handleChange = input=> e => {
     
 }
 export default HeaderConnect ;
+export const history = createBrowserHistory();

@@ -18,10 +18,7 @@ constructor() {
        
     }
    
-    
-
 }
-
 
 componentDidMount(){
  
@@ -41,10 +38,6 @@ headers:{
 
 
 }
-
-
-
-
 
 
 onSearchChange = (event) => {
