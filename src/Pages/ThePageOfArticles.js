@@ -22,9 +22,7 @@ constructor() {
 
 }
 
-componentDidMount(){
- 
- let x= localStorage.getItem('store');
+
 
 componentDidMount(){
  
@@ -45,16 +43,8 @@ headers:{
 
 }
 
-  fetch(`http://127.0.0.1:8000/api/auth/article`,{
-    method:"GET",
-headers:{
-    Authorization :`Bearer ${x}`
-}
-}).then(response =>{return response.json();
-}).then(users=>{this.setState({articles:users.Articles})
-   
 
-});
+   
 
 
 
