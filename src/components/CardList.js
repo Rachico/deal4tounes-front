@@ -3,11 +3,11 @@ import ReviewCard from './ReviewCard';
 
 
 const CardList=({ articles }) => {
-    
+
    const cardcomp= articles.map((user, i) => {
-       
+
     return(
-                           
+
         <ReviewCard 
         key={i} 
          id={articles[i].id} 
@@ -24,16 +24,13 @@ const CardList=({ articles }) => {
 
     return(
         <div>
-       {console.log("hhhhhh")}
-        
-            {
-               cardcomp 
-                    
-            }
-            {console.log("gggg")}
+   
+
+            {cardcomp }
+          
         </div>
     );
 
 }
-  
-  export default CardList;
+
+  export default CardList; 

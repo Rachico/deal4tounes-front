@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/ContactUs' ;
 import Home2 from './components/Home2' ; 
 import ActionsContainer from './components/ActionsContainer'; 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import OfferContainer from './components/OffersContainer';
+import { BrowserRouter as Router,  Link } from "react-router-dom";
 import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import Aboutus from './components/Aboutus';
@@ -17,6 +18,7 @@ import EspacePersoHeader from './headers/EspacePersoHeader';
 import EspacePerso from './components/EspacePerso';
 
 
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
@@ -24,15 +26,21 @@ class App extends Component {
 
   render() {
    
+   
     return (
-    <div>
-    <EspacePerso />
-      
-    </div>
+      <div>
+
+<EspacePerso />
+
+
+
+
+  </div>
     
       );
   }
 }
 
 export default App;
+
 

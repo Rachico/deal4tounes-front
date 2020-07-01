@@ -4,12 +4,21 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Aboutus from './Aboutus';
 import ContactUs from './ContactUs';
-import HeaderConnect from './Header';
-import { Button } from 'react-bootstrap';
+import HeaderConnect from '../headers/HeaderConnect';
 import $ from 'jquery';
-
+import {Redirect,BrowserRouter} from 'react-router-dom';
+import ThePageOfArticles from '../Pages/ThePageOfArticles';
 
 class Home2  extends Component {
+
+  constructor(){
+    super();
+ 
+  }
+
+
+
+
 
   componentDidMount(){
     $(window).scroll(function() {
@@ -29,11 +38,31 @@ class Home2  extends Component {
  
   render(){
     
+    let   x=localStorage.getItem('login');
+    let  loginYes = (x === 'true')   
+    if(loginYes){
+      
+      return (
+      <div className="app-routes">
+      
+        <BrowserRouter>
+      
+      <Redirect to="../Pages/ThePageOfArticles" /> 
+      <ThePageOfArticles/>
+      </BrowserRouter>
+</div>
+  
+      )
+    }
+
+
+
+
   return (
-           
+          
                
    <div>     
-  
+  <HeaderConnect/>
         <section id="intro">
         
         <div className="intro-container">
@@ -61,7 +90,8 @@ class Home2  extends Component {
           </div>
         </section>
         
-
+        <Aboutus/>
+        <ContactUs/>
     </div>
   
       );

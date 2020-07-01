@@ -1,16 +1,13 @@
 import React , { Component } from 'react';
 import '../css/style.css' ;
-import { AppBar, MuiThemeProvider, TextField, RaisedButton } from '@material-ui/core';
-import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
-import Visibility from '@material-ui/icons/Visibility';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import {  TextField } from '@material-ui/core';
+import { Button} from 'react-bootstrap';
+
 import FormControl from '@material-ui/core/FormControl';
-import IconButton from '@material-ui/core/IconButton';
+
 import Input from '@material-ui/core/Input';
-import FilledInput from '@material-ui/core/FilledInput';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
+
 import InputLabel from '@material-ui/core/InputLabel';
-import InputAdornment from '@material-ui/core/InputAdornment';
 
 
 
@@ -33,7 +30,7 @@ class FormUserPersonalDetails extends Component {
     render(){
         const { values, handleChange } = this.props;
      return (
-        <MuiThemeProvider >
+        
         <React.Fragment>
             <div class="dot-container">
                 <span className="dot" style={{ backgroundColor: "#18d26e"}}></span>
@@ -129,7 +126,7 @@ class FormUserPersonalDetails extends Component {
            
           
         </React.Fragment>
-      </MuiThemeProvider>
+     
      );
 
         

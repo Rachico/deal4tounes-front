@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './Home2' ; 
-import ActionsContainer from '../components/ActionsContainer'; 
+
 import Aboutus from '../components/Aboutus';
 import ContactUs from '../components/ContactUs';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -59,7 +59,7 @@ class Header extends Component {
   
         <Route exact path="/" component={Home} />
         <Route path="/about" component={Aboutus} />
-        <Route path="/actions" component={ActionsContainer} />
+      
         <Route path="/contact" component={ContactUs} />
   
       
@@ -72,3 +72,5 @@ class Header extends Component {
   }
   }
   export default Header;
+   // <Route path="/actions" component={ActionsContainer} />
+   //import ActionsContainer from '../components/ActionsContainer'; 

@@ -1,16 +1,18 @@
 import React,{ Component } from 'react';
+
 class CommentExample extends Component{
 
 constructor(props){
   super(props);
 
 }
+
     render(){
   const{body}=this.props;
   return(   
   
-    <div class="row">
-  <div class="col-md-3">
+    <div>
+  <div>
     <div className="media mb-3" style={{margin:"20px"}}>
       <img
         className="mr-3 bg-light rounded"

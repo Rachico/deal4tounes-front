@@ -8,7 +8,7 @@ class Aboutus extends Component {
 render(){
     return (
         
-  <section id="aboutus" class="section-bg wow fadeInUp">
+  <section id="aboutus" className="section-bg wow fadeInUp">
   <div className="container"  style={{fontFamily:"Open Sans"}}>
 
     <div className="section-header">
@@ -18,9 +18,9 @@ render(){
       <p>Notre responsabilité se traduit par 3 engagements principaux:</p>
       <center>
         <ul style={{display:'flex!important',justifycontent: 'center!important'}}>
-        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo1}/><p>Aider à la gestion durable des ressources</p></li>
-        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo2}/><p>Réduire la pauvreté</p></li>
-        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo3}/><p>Promouvoir le développement humain</p></li>
+        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo1} alt=""/><p>Aider à la gestion durable des ressources</p></li>
+        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo2} alt=""/><p>Réduire la pauvreté</p></li>
+        <li style={{display:'inline-block'}}><img style={{height:'200px',weight:'200px'}} src={photo3} alt=""/><p>Promouvoir le développement humain</p></li>
       </ul>
       </center>
     </div>

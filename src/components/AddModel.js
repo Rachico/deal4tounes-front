@@ -1,8 +1,8 @@
 import React,{ Component } from 'react';
 import axios from 'axios';
 import Switcher from './Switcher';
-import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
-import FormControl from '@material-ui/core/FormControl';
+import {Modal, Row, Col} from 'react-bootstrap';
+
 
 
 class AddModel extends Component{
@@ -60,8 +60,17 @@ class AddModel extends Component{
     
         console.log('done');
         event.preventDefault();
+       console.log(this.state.name);
+       console.log(this.state.email);
+       console.log(this.state.password);
+       console.log(this.state.date_of_birth);
+       console.log(this.state.address);
+       console.log(this.state.city);
+       console.log(this.state.zip_code);
+       console.log(this.state.phone);
+        
+       axios.post(`http://127.0.0.1:8000/api/auth/register`, {   
 
-        axios.post(`http://127.0.0.1:8000/api/auth/register`, {   
             name: this.state.name,
             email: this.state.email,
             password : this.state.password,
