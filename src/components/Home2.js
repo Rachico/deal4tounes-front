@@ -8,6 +8,7 @@ import HeaderConnect from '../headers/HeaderConnect';
 import $ from 'jquery';
 import {Redirect,BrowserRouter} from 'react-router-dom';
 import ThePageOfArticles from '../Pages/ThePageOfArticles';
+import EspacePerso from './EspacePerso';
 
 class Home2  extends Component {
 
@@ -47,8 +48,8 @@ class Home2  extends Component {
       
         <BrowserRouter>
       
-      <Redirect to="../Pages/ThePageOfArticles" /> 
-      <ThePageOfArticles/>
+      <Redirect to="/EspacePerso" /> 
+      <EspacePerso />
       </BrowserRouter>
 </div>
   
@@ -68,15 +69,15 @@ class Home2  extends Component {
         <div className="intro-container">
         <div id="introCarousel" className="carousel  slide carousel-fade tc" data-ride="carousel">
         <ol className="carousel-indicators"></ol>
-              <div className="carousel-inner" role="listbox">
+              <div className="carousel-inner" role="listbox"> 
                 <div className="carousel-item active">
-                  <div className="carousel-background"><img src={require('../img/clasped-hands-541849_1920.jpg')} alt=""/></div>
+                  <div className="carousel-background"><img src={require('../img/hands-4906663_1920.jpg')} alt=""/></div>
                   <div className="carousel-container">
                   <div className="carousel-content" style={{border: '1px',background:'#fff',opacity: '1',padding:'-30px',borderRadius:'5px', width:'500px', height:'350px' }} >
 
       <h2 style={{fontSize:"40px", fontFamily:"Open Sans", padding:'40px'}}>Créez un impact positif sur le monde qui vous entoure !</h2>
 
-      <a href="#featured-services" className="btn btn-success grow" style={{fontFamily:"Open Sans"}}>Commencez Maintenant</a>
+      <a href="#featured-services" className="btn btn-success grow" style={{fontFamily:"Open Sans", borderRadius:'50px'}}>Commencez Maintenant</a>
                     
                     </div>
                   </div>

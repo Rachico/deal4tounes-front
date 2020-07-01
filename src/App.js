@@ -1,4 +1,4 @@
-import './css/style.css' ;
+import './css/style.css';
 import './App.css';
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +11,8 @@ import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import EspacePerso from './components/EspacePerso.js';
+import Aboutus from './components/Aboutus';
+import ContactUs from './components/ContactUs';
 class App extends Component {
 
  
@@ -19,8 +21,11 @@ class App extends Component {
    
     return (
       <div>
+      
+      <Home2 />
+     
 
-<EspacePerso />
+
 
 
 

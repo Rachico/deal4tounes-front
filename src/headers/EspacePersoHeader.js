@@ -6,9 +6,23 @@ import signout from '../img/signout.png';
 import parameters from '../img/parameters.png';
 import home from '../img/home.png';
 import EspacePersoHome from '../components/EspacePersoHome.js'; 
+import createBrowserHistory from 'history/createBrowserHistory';
 
 
 class EspacePersoHeader extends Component{
+
+  handleLogout = () => {
+    localStorage.removeItem('login');
+    localStorage.removeItem('store');
+    history.push('/');
+    this.refreshPage();
+    console.log('done');
+  };
+
+  refreshPage() {
+    window.location.reload(false);
+  }
+
     render(){
         return(
             <header id="header">
@@ -25,7 +39,12 @@ class EspacePersoHeader extends Component{
                 <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">consulter les offres</a></li>
                 <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">Articles</a></li>
 
-                <li><img src={signout} style={{height:"20px",width:"20px"}}></img><a href="" style={{ fontFamily:"Open Sans"}}>Se déconnecter</a></li>
+                <li className="">
+                  <a href="" style={{ fontFamily:"Open Sans"}} className="mt-2"  onClick={()=> this.handleLogout()} >
+                    Se déconnecter
+                  </a>
+                  <img src={signout} style={{height:"20px",width:"20px"}}></img>
+                </li>
     
                 
                 </ul>
@@ -37,3 +56,4 @@ class EspacePersoHeader extends Component{
         )}}
 
         export default EspacePersoHeader ;
+        export const history = createBrowserHistory();

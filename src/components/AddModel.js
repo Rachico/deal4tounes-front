@@ -1,10 +1,9 @@
-/*import React,{ Component } from 'react';
+import React,{ Component } from 'react';
 import axios from 'axios';
 import Switcher from './Switcher';
 import {Modal, Row, Col} from 'react-bootstrap';
-import store from 'store';
-import createBrowserHistory from 'history/createBrowserHistory'
 
+import createBrowserHistory from 'history/createBrowserHistory';
 
 class AddModel extends Component{
   constructor(props){
@@ -24,7 +23,6 @@ class AddModel extends Component{
       password_confirmation:'',
       
     }
-
   }
 
   handleChange = input=> e => {
@@ -73,6 +71,7 @@ class AddModel extends Component{
        console.log(this.state.city);
        console.log(this.state.zip_code);
        console.log(this.state.phone);
+
         
        axios.post(`http://127.0.0.1:8000/api/auth/register`, {   
 
@@ -87,10 +86,10 @@ class AddModel extends Component{
             
 
           }).then(response => { 
-            history.push('/about');
+            history.push('/EspacePerso');
             this.refreshPage();
-            store.set('login',true) ;
-            store.set('store',response.data.access_token);
+            localStorage.setItem('login',true) ;
+            localStorage.setItem('store',response.data.access_token);
             }).catch(errors => {
                   console.log(errors)
             });
@@ -150,13 +149,5 @@ class AddModel extends Component{
 
   }
   export default AddModel ;
-  export const history = createBrowserHistory(); */
-  /*
-  <Switcher 
-                    step = {step}
-                    nextStep = {this.nextStep}
-                    handleChange = {this.handleChange}
-                    values = {values}
-                  />
-                  
-                  */
+  export const history = createBrowserHistory(); 
+  

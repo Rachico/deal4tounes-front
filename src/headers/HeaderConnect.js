@@ -1,4 +1,4 @@
-/*import React,{ Component } from 'react';
+import React,{ Component } from 'react';
 import AddModel from '../components/AddModel';
 import '../css/style.css' ;
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,8 +7,8 @@ import Home2 from '../components/Home2' ;
 import '../App';
 import axios from 'axios';
 import {Redirect,BrowserRouter} from 'react-router-dom';
-import store from 'store';
-import createBrowserHistory from 'history/createBrowserHistory'
+
+import createBrowserHistory from 'history/createBrowserHistory';
 
 
 class HeaderConnect extends Component{
@@ -52,10 +52,10 @@ handleChange = input=> e => {
           
             
         this.setState({login:true})
-        history.push('/about');
+        history.push('/EspacePerso');
         this.refreshPage();
-        store.set('login',true) ;
-        store.set('store',response.data.access_token);
+        localStorage.setItem('login',true) ;
+        localStorage.setItem('store',response.data.access_token);
 
           }).catch(errors => {
             console.log(errors)
@@ -147,4 +147,4 @@ handleChange = input=> e => {
     
 }
 export default HeaderConnect;
-export const history = createBrowserHistory(); */
+export const history = createBrowserHistory(); 
