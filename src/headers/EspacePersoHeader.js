@@ -5,6 +5,7 @@ import '../App';
 import signout from '../img/signout.png';
 import parameters from '../img/parameters.png';
 import home from '../img/home.png';
+import EspacePersoHome from '../components/EspacePersoHome.js'; 
 
 
 class EspacePersoHeader extends Component{
@@ -18,22 +19,11 @@ class EspacePersoHeader extends Component{
               <h2><a href="#" className="scrollto" style={{ fontFamily:"Open Sans"}}>Deal4Tounes</a></h2>
               </div>
               <nav id="nav-menu-container">
-                <ul className="nav-menu">
-                <li ><a ><img src={home} style={{height:"40px",width:"40px"}}></img></a></li>
-                <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">consulter les actions</a></li>
+                <ul className="nav-menu d-flex flex-col align-items-center">
+                <li ><a href="#espace"><img src={home} style={{height:"40px",width:"40px"}}></img></a></li>
+                <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="#Espace_actions">consulter les actions</a></li>
                 <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">consulter les offres</a></li>
-                <li className="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src={parameters} style={{height:"20px",width:"20px"}}></img><a href="" style={{ fontFamily:"Open Sans"}}>Paramètres</a>
-                <ul>
-                    
-                      <div id="popover-content" className="hide" style={{width :'200px'}}>
-                      <a href=""><div class="dropdownbutton"><p>Changer le mot de passe</p></div></a>
-      
-                      <a><div></div></a>
-
-                      </div>
-                </ul>
-                
-                </li>
+                <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">Articles</a></li>
 
                 <li><img src={signout} style={{height:"20px",width:"20px"}}></img><a href="" style={{ fontFamily:"Open Sans"}}>Se déconnecter</a></li>
     

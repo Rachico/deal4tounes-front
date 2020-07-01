@@ -10,7 +10,7 @@ import { BrowserRouter as Router,  Link } from "react-router-dom";
 import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-
+import EspacePerso from './components/EspacePerso.js';
 class App extends Component {
 
  

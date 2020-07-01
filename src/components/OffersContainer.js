@@ -39,7 +39,9 @@ class OffersContainer extends Component {
                 
                 
                      <div className='tc pv5' style={{fontFamily:"Open Sans",color:"black"}}>
-                           <h1 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Nos offres</h1>
+                           <h2 className='f1' style={{fontFamily:"Open Sans",color:"black"}}>Nos offres</h2>
+                           <h3 style={{ fontFamily:"Open Sans"}}>Obtenez un bon d'achat avec les points que vous avez accumulés.</h3>
+
                     
                               
                                     

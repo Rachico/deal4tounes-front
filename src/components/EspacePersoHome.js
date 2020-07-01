@@ -28,42 +28,25 @@ class EspacePersoHome extends Component{
     
     render(){
         return(
-            <section>
+            
             <div id="espace" class="section-bg wow fadeInUp">
             <div class="container">
             
             
             <div style={{padding:'40px'}}>
-            <h1 class="hello" >Hello !</h1>
+            <h1 class="hello" >Salut !</h1>
             <h1 class="hello">une belle journée pour changer le monde</h1>
+            <center>
+            <div style={{backgroundColor:'#13a456', height:'300px', width:'400px', borderRadius:'10px'}} class="mt-4">
+              <p className="" style={{fontSize:'150px', color:'white'}}>1589</p>
+            <h1 style={{color:'white'}}>points</h1>
+            </div>
+            </center>
             </div>
             </div>
             </div>            
             
-            <div id="espaceperso_home">
-            <h2 style={{textAlign:'center', textDecoration:'underline #18d26e'}}>Actualités</h2>
-            <div style={{padding:'60px', display:'flex', justifyContent:'center'}}>
-
-            <div class="article">
-            <a href=""><img style={{height:'300px',width:'300px'}} src={hello} ></img></a>
-            <div style={{maxWidth:'320px'}}><p class="article_name">Article 1</p></div>
-            </div>
-
-            <div  class="article">
-            <a href=""><img style={{height:'300px',width:'300px'}} src={ocean} ></img></a>
-            <div style={{maxWidth:'320px'}}><p class="article_name">Article 2</p></div>
-            </div>
-
-            <div class="article">
-            <a href=""><img style={{height:'300px',width:'300px'}} src={plastic}></img></a>
-            <div style={{maxWidth:'320px'}}><p class="article_name">Article 3</p></div>
-            </div>
-
-            </div> 
-            <p><a href="">&#10132; Voir plus d'articles</a></p>
             
-            
-            </div></section>
 
             )
         }

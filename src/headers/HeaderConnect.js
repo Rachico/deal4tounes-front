@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+/*import React,{ Component } from 'react';
 import AddModel from '../components/AddModel';
 import '../css/style.css' ;
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -147,4 +147,4 @@ handleChange = input=> e => {
     
 }
 export default HeaderConnect;
-export const history = createBrowserHistory();
+export const history = createBrowserHistory(); */

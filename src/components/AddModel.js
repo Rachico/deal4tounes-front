@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+/*import React,{ Component } from 'react';
 import axios from 'axios';
 import Switcher from './Switcher';
 import {Modal, Row, Col} from 'react-bootstrap';
@@ -150,8 +150,7 @@ class AddModel extends Component{
 
   }
   export default AddModel ;
-  export const history = createBrowserHistory();
-
+  export const history = createBrowserHistory(); */
   /*
   <Switcher 
                     step = {step}

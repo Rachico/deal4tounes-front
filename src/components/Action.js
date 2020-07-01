@@ -22,7 +22,7 @@ function Action({title, body, id}) {
             <div class='col-8'>
                 <h2>{title}</h2>
                 <p>{body}</p>  
-                <Button variant="secondary" onClick={handleShow}>OK</Button>
+                <Button variant="secondary" onClick={handleShow}>Participer</Button>
                 <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton style={{backgroundColor:'#18d26e'}}>
           <Modal.Title style={{color:'white'}}>Action title</Modal.Title>

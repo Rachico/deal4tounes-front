@@ -5,7 +5,8 @@ import '../App';
 import EspacePersoHeader from '../headers/EspacePersoHeader.js';
 import EspacePersoHome from './EspacePersoHome.js';
 import Footer from './Footer.js';
-import Action from './Action.js';
+import Localisation from './Localisation';
+import OffersContainer from './OffersContainer.js';
 class EspacePerso extends Component{
     render(){
         return(
@@ -13,7 +14,8 @@ class EspacePerso extends Component{
         <div>
         <EspacePersoHeader />
         <EspacePersoHome />
-        <Action />
+        <Localisation />
+        <OffersContainer />
         <Footer />
 
 

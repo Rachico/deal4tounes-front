@@ -6,8 +6,8 @@ const {handleCommentSubmit}=props;
 const [comment,setComment] =useState('');
 return (
       
-        <div class="row" >
-        <div class="col-md-3">
+        <div >
+        <div>
         <div className='card mt-4 mb-3'  style={{margin:"20px"}}>
             <div className="card-header"><strong>comments</strong></div>
             <div className="card-body">
@@ -22,9 +22,9 @@ return (
                handleCommentSubmit(comment);
             setComment('');
             }}>
-               comment
+               commenter
             </button>
-            <button className="btn btn-warning">close issue</button>
+            
             </div>
              </div>
              </div>
