@@ -1,5 +1,4 @@
-import React , { Component } from 'react';
-import reactDom from 'react-dom';
+import React,{ Component } from 'react';
 
 import CommentAdd from './CommentAdd';
 import CommentExample from './CommentExample';

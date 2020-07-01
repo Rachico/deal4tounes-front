@@ -2,7 +2,8 @@ import React,{ Component } from 'react';
 import axios from 'axios';
 import Switcher from './Switcher';
 import {Modal, Row, Col} from 'react-bootstrap';
-
+import store from 'store';
+import createBrowserHistory from 'history/createBrowserHistory'
 
 
 class AddModel extends Component{
@@ -56,6 +57,10 @@ class AddModel extends Component{
     event.preventDefault();
   };
 
+  refreshPage() {
+    window.location.reload(false);
+  }
+
   handleSubmit = event => {
     
         console.log('done');
@@ -82,7 +87,10 @@ class AddModel extends Component{
             
 
           }).then(response => { 
-              console.log(response)
+            history.push('/about');
+            this.refreshPage();
+            store.set('login',true) ;
+            store.set('store',response.data.access_token);
             }).catch(errors => {
                   console.log(errors)
             });
@@ -142,6 +150,7 @@ class AddModel extends Component{
 
   }
   export default AddModel ;
+  export const history = createBrowserHistory();
 
   /*
   <Switcher 

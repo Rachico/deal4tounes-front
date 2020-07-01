@@ -9,15 +9,6 @@ import OfferContainer from './components/OffersContainer';
 import { BrowserRouter as Router,  Link } from "react-router-dom";
 import HeaderConnect from '../src/headers/HeaderConnect';
 import ThePageOfArticles from './Pages/ThePageOfArticles';
-import Aboutus from './components/Aboutus';
-import ContactUs from './components/ContactUs';
-import Header from './components/Header';
-import $ from 'jquery';
-import CommentGroup from './components/Comments/CommentGroup';
-import EspacePersoHeader from './headers/EspacePersoHeader';
-import EspacePerso from './components/EspacePerso';
-
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -25,7 +16,6 @@ class App extends Component {
  
 
   render() {
-   
    
     return (
       <div>
@@ -42,5 +32,22 @@ class App extends Component {
 }
 
 export default App;
+/*
+import Aboutus from './components/Aboutus';
+import ContactUs from './components/ContactUs';
+import Header from './components/Header';
+import $ from 'jquery';
+import CommentGroup from './components/Comments/CommentGroup'
+import ActionsContainer from './components/ActionsContainer'; 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+<div className="app-routes">
+       <BrowserRouter>
+    <Switch>
+      <Route path="/login" component={ThePageOfArticles} />
+      <Route path="/" component={Home2} />
+    </Switch>
+    </BrowserRouter>
+  </div>
 
-
+*/
