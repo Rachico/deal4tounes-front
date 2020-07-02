@@ -149,5 +149,5 @@ class AddModel extends Component{
 
   }
   export default AddModel ;
-  export const history = createBrowserHistory(); 
+  export const history = createBrowserHistory();
   

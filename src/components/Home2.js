@@ -17,10 +17,6 @@ class Home2  extends Component {
  
   }
 
-
-
-
-
   componentDidMount(){
     $(window).scroll(function() {
       if ($(this).scrollTop() > 100) {
