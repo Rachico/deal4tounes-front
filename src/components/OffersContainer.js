@@ -21,11 +21,11 @@ class OffersContainer extends Component {
         }
     }
 
-    componentWillMount(){
-        fetch("http://localhost:4000/products")
-            .then(res => res.json())
-            .then(data => this.setState({offers: data}))
-        }
+    //componentWillMount(){
+        //fetch("http://localhost:4000/products")
+            //.then(res => res.json())
+            //.then(data => this.setState({offers: data}))
+        //}
   
     
 
