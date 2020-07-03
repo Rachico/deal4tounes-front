@@ -80,6 +80,7 @@ class Action extends Component{
     render(){
       const { show, code } =this.state;
       
+      
         return(
 
           <div className="row flex tc bg-white dib br3 pa3 ma4 grow bw shadow-1" style={{marginLeft:'50px', marginRight:'50px'}}>

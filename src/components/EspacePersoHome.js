@@ -23,7 +23,7 @@ class EspacePersoHome extends Component{
   }
 
   getClientPoints(){
-    Axios.get(`http://127.0.0.1:8000/api/auth/client/${this.state.authUser}`,{
+    Axios.get(`http://127.0.0.1:8000/api/auth/client/${localStorage.getItem('user_id')}`,{
          
       headers:{
           Authorization :`Bearer ${localStorage.getItem('store')}`
@@ -64,6 +64,10 @@ componentDidMount(){
             console.log(response);
             this.setState({authUser:response['data'].id});
             this.setState({Name:response['data'].name});
+            localStorage.setItem('name',this.state.Name);
+            localStorage.setItem('user_id',this.state.authUser);
+            this.getClientPoints();
+            //let name = localStorage.getItem('name');
         
         });
       
@@ -98,8 +102,8 @@ componentDidMount(){
             <h1 class="hello">une belle journée pour changer le monde</h1>
             <center>
             <div style={{backgroundColor:'#13a456', height:'300px', width:'400px', borderRadius:'10px'}} class="mt-4">
-              <p className="" style={{fontSize:'100px', color:'white', fontWeight:'bold'}}>{client}</p>
-            <h1 style={{color:'white'}}>points</h1>
+              <p className="" style={{fontSize:'100px', color:'white', fontWeight:'bold',marginTop:'40px'}}>{client}</p>
+            <h1 style={{color:'white',fontSize:'60px'}}>points</h1>
             </div>
             </center>
             </div>
