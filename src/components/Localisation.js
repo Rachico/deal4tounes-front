@@ -5,11 +5,21 @@ import '../css/style.css';
 import Action from './Action.js';
 import CommentGroup from './Comments/CommentGroup.js';
 import MapStyles from './MapStyles.js';
-import * as markerData from '../data/markersData.json';
 
-function Map(){
+import Geocode from "react-geocode";
+
+function Map({address}){
     const [selectedMarker , setSelectedMarker] = useState(null);
+    
+
+
+    Geocode.fromAddress({address}).then(
+        response => {
+          const {lat, lng } = response.results[0].geometry.location;
+          
+        });
     return(
+
 
 <GoogleMap 
 defaultZoom={12} 
@@ -17,13 +27,13 @@ defaultCenter={{lat: 36.806496 , lng: 10.181532}}
 defaultOptions={{styles : MapStyles}}
 >
 
-{markerData.features.map( (markerr) => (
+
 <Marker 
-position={{lat:markerr.geometry.coordinates[0] , lng: markerr.geometry.coordinates[1] }}
+position={{lat:36.806496, lng: 10.181532 }}
 onClick = { () => {setSelectedMarker(true);}}
 
 />
-))}
+
 {selectedMarker && (
 <InfoWindow
 position = {{
