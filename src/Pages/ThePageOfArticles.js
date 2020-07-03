@@ -39,12 +39,6 @@ headers:{
 
 }
 
-
-   
-
-
-
-
 onSearchChange = (event) => {
     this.setState({searchfield:event.target.value});   
 }
@@ -54,7 +48,7 @@ onSearchChange = (event) => {
 
 render(){  
     const { articles, searchfield } = this.state
-const filteredArticles = articles.filter(articles =>{
+    const filteredArticles = articles.filter(articles =>{
  return articles.Typography.toLowerCase().includes(searchfield.toLowerCase());
 
 })

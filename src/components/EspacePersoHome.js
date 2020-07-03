@@ -10,18 +10,33 @@ import $ from 'jquery';
 import Axios from 'axios';
 
 class EspacePersoHome extends Component{
+  
   constructor() {
     super();
     this.state = {
-        authUser : '',
-        client:null,
+        authUser :'',
+        client:'',
         Name:'',
         
     }
    
-
   }
 
+  getClientPoints(){
+    Axios.get(`http://127.0.0.1:8000/api/auth/client/${this.state.authUser}`,{
+         
+      headers:{
+          Authorization :`Bearer ${localStorage.getItem('store')}`
+  
+      }
+      }).then(
+        response =>{
+          console.log(response);
+          this.setState({client:response['data']['client_details'].points});
+      
+      })
+  
+  }
 
 componentDidMount(){
     
@@ -39,12 +54,10 @@ componentDidMount(){
         }
 
         
-       
-       let x = localStorage.getItem('store');
 
        Axios.get(`http://127.0.0.1:8000/api/auth/user`,{
          headers:{
-          Authorization :`Bearer ${x}`
+          Authorization :`Bearer ${localStorage.getItem('store')}`
          }
         }).then(
           response =>{
@@ -52,33 +65,19 @@ componentDidMount(){
             this.setState({authUser:response['data'].id});
             this.setState({Name:response['data'].name});
         
-        })
+        });
       
        
       
     
       console.log(this.state.authUser);    
      
-      
-
-}
-
-
-getClientPoints(){
-  Axios.get(`http://127.0.0.1:8000/api/auth/client/${this.state.authUser}`,{
-       
-    headers:{
-        Authorization :`Bearer ${localStorage.getItem('store')}`
-
-    }
-    }).then(
-      response =>{
-        console.log(response);
-        return this.setState({client:response['data']['client_details'].points});
     
-    })
-
 }
+
+
+
+
         
         
 
@@ -86,7 +85,8 @@ getClientPoints(){
     render(){
 
       const { client, Name } = this.state;
-      const points = this.getClientPoints();
+      //const points = this.getClientPoints();
+      
         return(
             
             <div id="espace" class="section-bg wow fadeInUp">
