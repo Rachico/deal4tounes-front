@@ -4,8 +4,11 @@ import '../css/style.css';
 import Action from './Action.js';
 import CommentGroup from './Comments/CommentGroup.js';
 import MapStyles from './MapStyles.js';
+import Axios from 'axios';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+
+
  
 export class Localisation extends Component {
 
@@ -14,7 +17,23 @@ export class Localisation extends Component {
         showingInfoWindow: false,
         activeMarker: {},
         selectedPlace: {},
+        action_title:'',
+        action_body:'',
       };
+
+      componentDidMount(){
+          Axios.get('http://localhost:8000/api/action/test_address_back',{
+
+          }).then(response => { 
+          
+            console.log(response)
+            //this.setState({action_title:response});
+           
+    
+              }).catch(errors => {
+                console.log(errors)
+          });
+      }
      
       onMarkerClick = (props, marker, e) =>
         this.setState({

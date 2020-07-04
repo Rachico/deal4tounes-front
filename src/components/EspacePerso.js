@@ -7,6 +7,7 @@ import EspacePersoHome from './EspacePersoHome.js';
 import Footer from './Footer.js';
 import Localisation from './Localisation';
 import OffersContainer from './OffersContainer.js';
+import ThePageOfArticles from '../Pages/ThePageOfArticles';
 class EspacePerso extends Component{
     render(){
         return(
@@ -16,6 +17,7 @@ class EspacePerso extends Component{
         <EspacePersoHome />
         <Localisation />
         <OffersContainer />
+        <ThePageOfArticles />
         <Footer />
 
 
