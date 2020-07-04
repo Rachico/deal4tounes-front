@@ -39,7 +39,7 @@ class EspacePersoHeader extends Component{
                 <li ><a href="#espace"><img src={home} style={{height:"40px",width:"40px"}}></img></a></li>
                 <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="#Espace_actions">consulter les actions</a></li>
                 <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">consulter les offres</a></li>
-                <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="">Articles</a></li>
+                <li style={{ fontFamily:"Open Sans",fontSize:"20px"}}><a class="aa" href="#articles">Articles</a></li>
 
                 <li className="">
                   <a href="" style={{ fontFamily:"Open Sans"}} className="mt-2"  onClick={()=> this.handleLogout()} >

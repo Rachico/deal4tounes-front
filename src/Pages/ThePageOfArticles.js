@@ -57,7 +57,7 @@ render(){
    
     
     return(
-        <div>
+        <div id="articles">
 <div className= "image">
 <div className="site_title">
 

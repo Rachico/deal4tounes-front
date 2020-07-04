@@ -80,12 +80,6 @@ componentDidMount(){
 }
 
 
-
-
-        
-        
-
-
     render(){
 
       const { client, Name } = this.state;
