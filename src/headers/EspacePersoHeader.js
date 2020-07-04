@@ -14,6 +14,8 @@ class EspacePersoHeader extends Component{
   handleLogout = () => {
     localStorage.removeItem('login');
     localStorage.removeItem('store');
+    localStorage.removeItem('name');
+    localStorage.removeItem('user_id');
     history.push('/');
     this.refreshPage();
     console.log('done');
