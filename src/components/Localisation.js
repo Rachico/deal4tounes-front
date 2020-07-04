@@ -8,6 +8,8 @@ import MapStyles from './MapStyles.js';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
  
 export class Localisation extends Component {
+
+
     state = {
         showingInfoWindow: false,
         activeMarker: {},
