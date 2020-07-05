@@ -12,10 +12,11 @@ function ActionList({ actions }) {
                  actions.map((user, i) => {
                     return  (
                         <Action 
-                            key={actions[i].id} 
+                            
                             id={actions[i].id} 
                             title={actions[i].title} 
                             body={actions[i].body}
+                            address={actions[i].address}
                         />
                     );
                 })

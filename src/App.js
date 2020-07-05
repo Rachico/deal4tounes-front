@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div>
       
-      <EspacePerso />
+      <Home2 />
      
 
 

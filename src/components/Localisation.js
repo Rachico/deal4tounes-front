@@ -7,33 +7,58 @@ import MapStyles from './MapStyles.js';
 import Axios from 'axios';
 
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import Geocode from "react-geocode";
 
 
  
 export class Localisation extends Component {
 
-
-    state = {
-        showingInfoWindow: false,
+  constructor(props) {
+    super(props);
+    this.state = {
+      showingInfoWindow: false,
         activeMarker: {},
         selectedPlace: {},
-        action_title:'',
-        action_body:'',
-      };
+        action_title:[],
+        action_body:[],
+        addresses:[],
+        
+    };
+  }
+    
 
+      
+      
+      
       componentDidMount(){
-          Axios.get('http://localhost:8000/api/action/test_address_back',{
+        //get action title and action body
+          //Axios.get('http://localhost:8000/api/action/getActionByAddress',{
 
-          }).then(response => { 
+          //}).then(response => { 
           
-            console.log(response)
-            //this.setState({action_title:response});
+         //   console.log(response)
+          /*  this.setState({action_title:response});
+            this.setState();
+            this.setState({action_body:response});
+            this.setState();
            
     
               }).catch(errors => {
                 console.log(errors)
-          });
-      }
+          }); */
+        
+          // get action address
+          Axios.get('http://localhost:8000/api/action/list',{
+      }).then(response =>{
+        
+        console.log(response);
+        this.setState({addresses:response.data});
+      }).catch(errors => {
+        console.log(errors)
+  });
+}
+
+      
      
       onMarkerClick = (props, marker, e) =>
         this.setState({
@@ -53,8 +78,10 @@ export class Localisation extends Component {
 
 
   render() {
+    
     return (
-    <div id="Espace_actions">
+    
+      <div id="Espace_actions">
     <center>
     <h2 className='f1' style={{fontFamily:"Open Sans",color:"black", marginTop:'20px'}}>Actions</h2>
     <h3 style={{ fontFamily:"Open Sans"}}>Cliquez sur les pins afin de consulter les actions</h3>
@@ -69,26 +96,41 @@ export class Localisation extends Component {
     }}
     onClick={this.onMapClicked}
       >
+   {
+           this.state.addresses.map(function(item, i){
+            Geocode.fromAddress(item).then(
+              response => {
+                console.log(response);
+                 let lattitude = response.results[0].geometry.location.lat;
+                 let lngitude = response.results[0].geometry.location.lng;
+                
+                 console.log(lattitude,lngitude);
+                
+              });
+             return <Marker  key={i}  />
+           })
+         }
+        
+             
     
-        <Marker onClick={this.onMarkerClick} position={{lat: 36.806496,
-        lng: 10.181532}} />
- 
- <InfoWindow
+ <InfoWindow 
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow} onCloseClick={this.onMapClicked}>
             <div>
-              <Action />
+              
             </div>
         </InfoWindow> 
+      
       </Map>
       
       </div>
       </center>
       </div>
+    
     );
   }
 }
  
 export default GoogleApiWrapper({
   apiKey: ("AIzaSyBa7iaXmn9zAdEaOFfmQAcK6dlz5nfQ3X8")
-})(Localisation)
+})(Localisation);

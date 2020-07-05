@@ -5,9 +5,9 @@ import '../App';
 import EspacePersoHeader from '../headers/EspacePersoHeader.js';
 import EspacePersoHome from './EspacePersoHome.js';
 import Footer from './Footer.js';
-import Localisation from './Localisation';
 import OffersContainer from './OffersContainer.js';
 import ThePageOfArticles from '../Pages/ThePageOfArticles';
+import Localisation from './Localisation.js';
 class EspacePerso extends Component{
     render(){
         return(
