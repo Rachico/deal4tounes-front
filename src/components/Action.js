@@ -83,21 +83,23 @@ class Action extends Component{
       
         return(
 
-          <div className="row flex tc bg-white dib br3 pa3 ma4 grow bw shadow-1" style={{marginLeft:'50px', marginRight:'50px'}}>
+          <div className="row flex tc bg-white dib br3 pa3 ma4 grow bw shadow-1" style={{margin:'50px'}}>
+            <h1 style={{ fontFamily:"Open Sans"}} className="mr-3">Cliquez ici une fois vous avez effectué l'action</h1>
             
-
             <div class='row'>
-            <div class='col-4 img-responsive'>
-                
-                <img alt ='action_image' style={{height:"200px",width:"200px"}} src={`https://flathash.com/1546`}/>
-            </div>
+            
             <div class='col-8'>
-                <h2>actioon title</h2>
-                <p>action body</p>  
+                
+                
                 <Button variant="secondary" onClick={this.handleShow}>Participer</Button>
-                <Modal show={show} onHide={this.handleClose}>
+                
+                
+                </div> 
+            </div>
+            
+            <Modal show={show} onHide={this.handleClose}>
             <Modal.Header closeButton style={{backgroundColor:'#18d26e'}}>
-              <Modal.Title style={{color:'white'}}>Action title</Modal.Title>
+              <Modal.Title style={{color:'white'}}>Merci d'avoir participé</Modal.Title>
             </Modal.Header>
             <Modal.Body style={{padding:'40px'}}>
                   <div style={{display:'flex', justifyContent:'center', marginBottom: '20px'}}>
@@ -127,9 +129,6 @@ class Action extends Component{
                     
                   </Modal.Footer>
                 </Modal>
-                </div> 
-            </div>
-        
         </div>
 
       );
